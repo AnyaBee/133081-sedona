@@ -1,0 +1,24 @@
+.banner {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.banner__image {
+  margin-bottom: 40px;
+}
+
+.banner__promo-title {
+  padding-left: 20px;
+  padding-right: 20px;
+  @include font-heading;
+}
+
+.banner__promo-text {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+

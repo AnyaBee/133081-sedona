@@ -1,0 +1,16 @@
+.page-footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.social__twitter,
+.social__facebook,
+.social__youtube,
+.copyright__icon {
+  @include visually-hidden;
+}
+
+.copyright__text {
+  @include font-text;
+
+}
