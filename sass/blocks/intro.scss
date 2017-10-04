@@ -1,0 +1,12 @@
+.intro {
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.intro__page-title {
+  @include font-heading;
+}
+
+.intro__promo-text {
+  @include font-text;
+}
