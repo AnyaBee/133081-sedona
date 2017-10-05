@@ -1,0 +1,9 @@
+.find-hotel {
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.find-hotel__promo-text {
+  @include font-text;
+}

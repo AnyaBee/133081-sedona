@@ -1,0 +1,20 @@
+.video {
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.video__title {
+  @include font-heading;
+}
+
+.video__promo-text {
+  @include font-text;
+}
+
+.video__volume-scale,
+.video__volume-slider,
+.video__replay,
+.video__subtitles,
+.video__full-screen {
+  @include visually-hidden;
+}

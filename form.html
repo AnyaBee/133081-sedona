@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona - because the Grand Canyon sucks</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
@@ -14,16 +16,16 @@
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a>Главная</a>
+          <a href="index.html" class="site-list__link">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="#">фото и видео</a>
+          <a class="site-list__link" href="photo.html">фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="#">форма отзыва</a>
+          <a class="site-list__link">форма отзыва</a>
         </li>
         <li class="site-list__item">
-          <a href="#">HTML Academy</a>
+          <a class="site-list__link" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -32,29 +34,31 @@
     <div class="wrapper">
       <img class="wrapper__image" src="http://placehold.it/320x160" width="320" height="160" alt="Photo of Sedona">
     </div>
-    <h1 class="page-title">Оставьте свой отзыв</h1>
-    <h2 class="promo-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</h2>
+    <div class="review-prompt">
+      <h1 class="review-prompt__page-title">Оставьте свой отзыв</h1>
+      <h2 class="review-prompt__promo-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</h2>
+    </div>
     <section class="review">
       <form class="review__new" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="review__block">
           <legend class="review__title">Представьтесь:</legend>
           <label class="review__field-name review__field-name--required">имя*:
-            <input type="text" placeholder="Петр">
+            <input class="review__input" type="text" placeholder="Петр">
           </label>
           <label class="review__field-name review__field-name--required">фамилия*:
-            <input type="text" placeholder="Иванов">
+            <input class="review__input" type="text" placeholder="Иванов">
           </label>
           <label class="review__field-name">Отчество:
-            <input type="text" placeholder="Александрович">
+            <input class="review__input" type="text" placeholder="Александрович">
           </label>
         </fieldset>
         <fieldset class="review__block">
           <legend class="review__title">Контактная информация:</legend>
           <label class="review__field-name review__field-name--required">Контактный телефон*:
-            <input type="tel" placeholder="Введите телефон">
+            <input class="review__input" type="tel" placeholder="Введите телефон">
           </label>
           <label class="review__field-name review__field-name--required">Электронная почта*:
-            <input type="email" placeholder="Введите e-mail">
+            <input class="review__input" type="email" placeholder="Введите e-mail">
           </label>
         </fieldset>
         <fieldset class="review__block">
@@ -99,8 +103,8 @@
           </label>
         </fieldset>
         <fieldset class="review__block">
-          <legend>Опишите свои эмоции:</legend>
-          <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+          <legend class="review__title">Опишите свои эмоции:</legend>
+          <textarea class="review__describe" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="review__button button" type="submit">отправить отзыв</button>
       </form>

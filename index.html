@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona - because the Grand Canyon sucks</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -14,16 +16,16 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">фото и видео</a>
+            <a class="site-list__link" href="photo.html">фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="#">форма отзыва</a>
+            <a class="site-list__link" href="form.html">форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -36,9 +38,11 @@
         <p class="banner__promo-text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       </section>
       <section class="advantages">
-        <h2 class="advantages__title">настоящий городок</h2>
-        <span class="advantages__number">№1</span>
-        <p class="advantages__expanding-text">седона не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="advantages__feature">
+          <h2 class="advantages__title">настоящий городок</h2>
+          <span class="advantages__number">&ndash; №1 &ndash;</span>
+          <p class="advantages__expanding-text">седона не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
         <img class="advantages__image" src="http://placehold.it/320x260" width="320" height="260" alt="Sedona-view">
         <ul class="advantages__list">
           <li class="advantages__item">жилье
@@ -51,21 +55,29 @@
             <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </li>
         </ul>
-        <h2 class="advantages__title">там есть мост дьявола</h2>
-        <span class="advantages__number">№2</span>
-        <p class="advantages__expanding-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <div class="advantages__feature">
+          <h2 class="advantages__title">там есть мост дьявола</h2>
+          <span class="advantages__number">&ndash; №2 &ndash;</span>
+          <p class="advantages__expanding-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
         <img class="advantages__image" src="http://placehold.it/320x260" width="320" height="260" alt="Sedona-view">
-        <h2 class="advantages__title advantages__title--black">небольшая площадь</h2>
-        <span class="advantages__number advantages__number--black">№3</span>
-        <p class="advantages__expanding-text advantages__expanding-text--black">все интересные места находятся очень близко</p>
-        <h2 class="advantages__title advantages__title--black">красивая дорога</h2>
-        <span class="advantages__number advantages__number--black">№4</span>
-        <p class="advantages__expanding-text advantages__expanding-text--black">ехать в седону из лас-вегаса
-          совсем не скучно!</p>
-        <h2 class="advantages__title advantages__title--black">мало туристов</h2>
-        <span class="advantages__number advantages__number--black">№5</span>
-        <p class="advantages__expanding-text advantages__expanding-text--black">Большинство едет в гранд каньон
-          и толпится там</p>
+        <div class="advantages__feature advantages__feature--black">
+          <h2 class="advantages__title advantages__title--black">небольшая площадь</h2>
+          <span class="advantages__number advantages__number--black">&ndash; №3 &ndash;</span>
+          <p class="advantages__expanding-text advantages__expanding-text--black">все интересные места находятся очень близко</p>
+        </div>
+        <div class="advantages__feature advantages__feature--black">
+          <h2 class="advantages__title advantages__title--black">красивая дорога</h2>
+          <span class="advantages__number advantages__number--black">&ndash; №4 &ndash;</span>
+          <p class="advantages__expanding-text advantages__expanding-text--black">ехать в седону из лас-вегаса
+            совсем не скучно!</p>
+        </div>
+        <div class="advantages__feature advantages__feature--black">
+          <h2 class="advantages__title advantages__title--black">мало туристов</h2>
+          <span class="advantages__number advantages__number--black">&ndash; №5 &ndash;</span>
+          <p class="advantages__expanding-text advantages__expanding-text--black">Большинство едет в гранд каньон
+            и толпится там</p>
+        </div>
       </section>
       <section class="find-hotel">
         <h2 class="find-hotel__title site-title">заинтересовались?</h2>

@@ -1,0 +1,13 @@
+.review-prompt {
+  padding: 20px;
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+}
+
+.review-prompt__page-title {
+  @include font-heading;
+}
+
+.review-prompt__promo-text {
+  @include font-text;
+}
