@@ -12,6 +12,8 @@
 
 .review__title {
   @include font-heading;
+  display: block;
+  text-align: center;
 }
 
 .review__field-name {
