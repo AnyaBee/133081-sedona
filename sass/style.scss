@@ -2,6 +2,7 @@
 @import "normalize.scss";
 @import "base/var.scss";
 @import "base/mixin.scss";
+@import "base/global.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -18,17 +19,3 @@
 @import "blocks/intro.scss";
 @import "blocks/photo.scss";
 @import "blocks/video.scss";
-
-a {
-  text-decoration: none;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-}
