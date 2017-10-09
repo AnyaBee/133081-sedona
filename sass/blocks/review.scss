@@ -62,3 +62,83 @@
   cursor: pointer;
   border: none;
 }
+
+.review__required {
+  @include font-text;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .review {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .review__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .review__title {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+
+  .review__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    order: 3;
+    border: none;
+    margin-bottom: 50px;
+  }
+
+  .review__block--left {
+    width: 50%;
+    order: 1;
+    border-right: 1px solid #dbdbdb;
+    margin-bottom: 60px;
+  }
+
+  .review__block--right {
+    width: 50%;
+    order: 2;
+    margin-bottom: 60px;
+  }
+
+  .review__input--contact {
+    display: block;
+    width: auto;
+  }
+  .review__sights {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review__sights label {
+    width: 50%;
+  }
+
+  .review__button {
+    max-width: 324px;
+  }
+
+  .review__required {
+    display: inline-block;
+  }
+
+  .review__separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review__button {
+    max-width: 480px;
+  }
+}

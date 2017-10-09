@@ -11,3 +11,10 @@
 .review-prompt__promo-text {
   @include font-text;
 }
+
+@media (min-width: 768px) {
+  .review-prompt {
+    border: none;
+    margin-bottom: 60px;
+  }
+}
