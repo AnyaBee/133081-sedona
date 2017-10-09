@@ -1,3 +1,10 @@
 .page-header {
   background-color: $white;
 }
+
+@media (max-width: 767px) {
+  .site-list__item--logo {
+    order: 5;
+    background-color: $white;
+  }
+}

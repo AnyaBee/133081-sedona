@@ -4,3 +4,11 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .find-hotel__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+

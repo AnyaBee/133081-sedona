@@ -13,3 +13,11 @@
 .copyright__text {
   @include font-text;
 }
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}

@@ -1,4 +1,7 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -22,6 +25,20 @@
   display: block;
   color: $white;
   text-decoration: none;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    border: none;
+  }
+
+  .site-list__link {
+    color: black;
+  }
 }
