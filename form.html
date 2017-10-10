@@ -58,13 +58,15 @@
               </label>
             </fieldset>
             <fieldset class="review__block">
-              <div class="review__title review__title--border">Контактная информация:</div>
-              <label class="review__field-name review__field-name--contact review__field-name--required">Контактный телефон*:
-                <input class="review__input review__input--contact" type="tel" placeholder="Введите телефон">
-              </label>
-              <label class="review__field-name review__field-name--required">Электронная почта*:
-                <input class="review__input review__input--contact" type="email" placeholder="Введите e-mail">
-              </label>
+              <div class="review__title review__title--border"><span class="review__borderline">Контактная информация:</span></div>
+              <div class="review__labelwrapper">
+                <label class="review__field-name review__field-name--contact review__field-name--required">Контактный телефон*:
+                  <input class="review__input review__input--contact" type="tel" placeholder="Введите телефон">
+                </label>
+                <label class="review__field-name review__field-name--email review__field-name--required">Электронная почта*:
+                  <input class="review__input review__input--contact" type="email" placeholder="Введите e-mail">
+                </label>
+              </div>
             </fieldset>
             <fieldset class="review__block review__block--left">
               <div class="review__title">ВАше Общее впечатление:</div>
@@ -86,7 +88,7 @@
             </fieldset>
           </div>
           <fieldset class="review__block">
-            <div class="review__title">посещенные достопримечательности:</div>
+            <div class="review__title review__title--border"><span class="review__borderline">посещенные<br> достопримечательности:</span></div>
             <div class="review__sights">
               <label>
                 <input type="checkbox" name="bridge" checked>
@@ -111,7 +113,7 @@
             </div>
           </fieldset>
           <fieldset class="review__block">
-            <div class="review__title">Опишите свои эмоции:</div>
+            <div class="review__title review__title--border"><span class="review__borderline">Опишите свои эмоции:</span></div>
             <textarea class="review__describe" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="review__separator">
