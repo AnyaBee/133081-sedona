@@ -5,4 +5,16 @@
   line-height: 40px;
   text-transform: uppercase;
   color: $white;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    background-color: $white;
+    color: $black;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

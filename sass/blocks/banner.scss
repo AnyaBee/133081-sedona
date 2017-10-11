@@ -5,6 +5,8 @@
 
 .banner__image {
   margin-bottom: 40px;
+  width: 100%;
+  height: auto;
 }
 
 .banner__promo-title {
@@ -20,4 +22,10 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    margin-top: -40px;
+  }
 }

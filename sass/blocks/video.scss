@@ -18,3 +18,9 @@
 .video__full-screen {
   @include visually-hidden;
 }
+
+@media (min-width: 768px) {
+  .video {
+    border: none;
+  }
+}
