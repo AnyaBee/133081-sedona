@@ -7,13 +7,16 @@
 .find-hotel__promo-text {
   @include font-text;
 }
+
 @media (min-width: 768px) {
   .find-hotel {
     padding-bottom: 30px;
   }
+
   .find-hotel__button {
     max-width: 460px;
   }
+
   .button__block {
     display: flex;
     justify-content: center;

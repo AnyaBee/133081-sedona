@@ -93,26 +93,32 @@
     display: flex;
     flex-direction: row;
   }
+
   .advantages__list {
     display: flex;
     justify-content: space-around;
   }
+
   .advantages__item {
     width: 165px;
     margin-top: 60px;
     margin-bottom: 60px;
     text-align: center;
   }
+
   .advantages__image--left {
     order: 1;
   }
+
   .advantages__block--right {
     order: 2;
   }
+
   .advantages__wrapper {
     display: flex;
     justify-content: space-around;
   }
+
   .advantages__feature--black {
     display: flex;
     flex-direction: column;
@@ -120,6 +126,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
   .advantages__feature--black::after {
     border: none;
   }
