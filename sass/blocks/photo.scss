@@ -5,8 +5,6 @@
 .photo__item {
   padding: 0;
   margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 20px;
   border-bottom: 1px solid #eeeeee;
 }
@@ -22,6 +20,7 @@
 }
 
 .photo__author {
+  display: block;
   font-family: $font-main;
   font-size: 14px;
   line-height: 24px;
@@ -45,14 +44,16 @@
   }
 
   .photo__item {
-    width: 325px;
+    width: 50%;
+    height: auto;
     border: none;
     padding: 0;
     background-color: $beige;
   }
 
   .photo__item--main {
-    width: 1200px;
+    width: 100%;
+    height: auto;
   }
 
   .video__image {
@@ -62,6 +63,10 @@
 }
 
 @media (min-width: 1200px) {
+  .photo__item--main {
+    width: 1200px;
+  }
+
   .photo__item {
     width: 400px;
   }

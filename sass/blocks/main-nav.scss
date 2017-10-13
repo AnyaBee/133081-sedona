@@ -1,4 +1,7 @@
 .main-nav {
+  position: relative;
+  min-height: 56px;
+  margin: 0 auto;
   background-color: $navy;
   font-family: "PT Sans", "Verdana", sans-serif;
   font-size: 18px;
@@ -8,13 +11,80 @@
   font-weight: bold;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  bottom: 41px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 56px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  width: 23px;
+  height: 4px;
+  background-color: $navy;
+  box-shadow: 0 10px 0 0 $navy, 0 20px 0 0 $navy;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    width: 26px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav__toggle--text {
+  @include visually-hidden;
+}
+
+@media (max-width: 767px) {
+  .main-nav--closed .site-list__item {
+    display: none;
+
+    &--:active {
+      display: block;
+    }
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .main-nav {
     background-color: $white;
     color: $black;
-  }
-
-  .main-nav__toggle {
-    display: none;
   }
 }

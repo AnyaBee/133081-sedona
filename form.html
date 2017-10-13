@@ -38,90 +38,92 @@
       <div class="banner-internal">
         <img class="banner-internal__image" src="http://placehold.it/1200x300" width="1200" height="300" alt="Photo of Sedona">
       </div>
-      <div class="review-prompt">
-        <h1 class="review-prompt__page-title">Оставьте свой отзыв</h1>
-        <h2 class="review-prompt__promo-text">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</h2>
-      </div>
-      <section class="review">
-        <form class="review__new" method="get" action="https://echo.htmlacademy.ru">
-          <div class="review__wrapper">
-            <fieldset class="review__block review__block--right">
-              <div class="review__title">Представьтесь:</div>
-              <label class="review__field-name review__field-name--required">имя*:
-                <input class="review__input" type="text" placeholder="Петр">
-              </label>
-              <label class="review__field-name review__field-name--required">фамилия*:
-                <input class="review__input" type="text" placeholder="Иванов">
-              </label>
-              <label class="review__field-name">Отчество:
-                <input class="review__input" type="text" placeholder="Александрович">
-              </label>
-            </fieldset>
-            <fieldset class="review__block">
-              <div class="review__title review__title--border"><span class="review__borderline">Контактная информация:</span></div>
-              <div class="review__labelwrapper">
-                <label class="review__field-name review__field-name--contact review__field-name--required">Контактный телефон*:
-                  <input class="review__input review__input--contact" type="tel" placeholder="Введите телефон">
+        <div class="container--form">
+          <div class="review-prompt">
+            <h1 class="review-prompt__page-title">Оставьте свой отзыв</h1>
+            <h2 class="review-prompt__promo-text">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</h2>
+          </div>
+        <section class="review">
+          <form class="review__new" method="get" action="https://echo.htmlacademy.ru">
+            <div class="review__wrapper">
+              <fieldset class="review__block review__block--right">
+                <div class="review__title">Представьтесь:</div>
+                <label class="review__field-name review__field-name--required">имя*:
+                  <input class="review__input" type="text" placeholder="Петр">
                 </label>
-                <label class="review__field-name review__field-name--email review__field-name--required">Электронная почта*:
-                  <input class="review__input review__input--contact" type="email" placeholder="Введите e-mail">
+                <label class="review__field-name review__field-name--required">фамилия*:
+                  <input class="review__input" type="text" placeholder="Иванов">
+                </label>
+                <label class="review__field-name">Отчество:
+                  <input class="review__input" type="text" placeholder="Александрович">
+                </label>
+              </fieldset>
+              <fieldset class="review__block">
+                <div class="review__title review__title--border"><span class="review__borderline">Контактная информация:</span></div>
+                <div class="review__labelwrapper">
+                  <label class="review__field-name review__field-name--contact review__field-name--required">Контактный телефон*:
+                    <input class="review__input review__input--contact" type="tel" placeholder="Введите телефон">
+                  </label>
+                  <label class="review__field-name review__field-name--email review__field-name--required">Электронная почта*:
+                    <input class="review__input review__input--contact" type="email" placeholder="Введите e-mail">
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="review__block review__block--left">
+                <div class="review__title">ВАше Общее впечатление:</div>
+                <label>
+                  <input type="radio" name="overall-experience" checked>
+                  <span class="review__fake-radio"></span>
+                  <span class="review__fake-label">Скорее положительное</span>
+                </label>
+                <label>
+                  <input type="radio" name="overall-experience">
+                  <span class="review__fake-radio"></span>
+                  <span class="review__fake-label">Скорее отрицательное</span>
+                </label>
+                <label>
+                  <input type="radio" name="overall-experience">
+                  <span class="review__fake-radio"></span>
+                  <span class="review__fake-label">Затрудняюсь ответить</span>
+                </label>
+              </fieldset>
+            </div>
+            <fieldset class="review__block">
+              <div class="review__title review__title--border"><span class="review__borderline">посещенные<br> достопримечательности:</span></div>
+              <div class="review__sights">
+                <label>
+                  <input type="checkbox" name="bridge" checked>
+                  <span class="review__fake-checkbox"></span>
+                  <span class="review__fake-label">Мост Дьявола</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="slide-park" checked>
+                  <span class="review__fake-checkbox"></span>
+                  <span class="review__fake-label">Слайд-парк</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="mountain">
+                  <span class="review__fake-checkbox"></span>
+                  <span class="review__fake-label">Гора-Колокол</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="red-hills" checked>
+                  <span class="review__fake-checkbox"></span>
+                  <span class="review__fake-label">Красные скалы</span>
                 </label>
               </div>
             </fieldset>
-            <fieldset class="review__block review__block--left">
-              <div class="review__title">ВАше Общее впечатление:</div>
-              <label>
-                <input type="radio" name="overall-experience" checked>
-                <span class="review__fake-radio"></span>
-                <span class="review__fake-label">Скорее положительное</span>
-              </label>
-              <label>
-                <input type="radio" name="overall-experience">
-                <span class="review__fake-radio"></span>
-                <span class="review__fake-label">Скорее отрицательное</span>
-              </label>
-              <label>
-                <input type="radio" name="overall-experience">
-                <span class="review__fake-radio"></span>
-                <span class="review__fake-label">Затрудняюсь ответить</span>
-              </label>
+            <fieldset class="review__block">
+              <div class="review__title review__title--border"><span class="review__borderline">Опишите свои эмоции:</span></div>
+              <textarea class="review__describe" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-          </div>
-          <fieldset class="review__block">
-            <div class="review__title review__title--border"><span class="review__borderline">посещенные<br> достопримечательности:</span></div>
-            <div class="review__sights">
-              <label>
-                <input type="checkbox" name="bridge" checked>
-                <span class="review__fake-checkbox"></span>
-                <span class="review__fake-label">Мост Дьявола</span>
-              </label>
-              <label>
-                <input type="checkbox" name="slide-park" checked>
-                <span class="review__fake-checkbox"></span>
-                <span class="review__fake-label">Слайд-парк</span>
-              </label>
-              <label>
-                <input type="checkbox" name="mountain">
-                <span class="review__fake-checkbox"></span>
-                <span class="review__fake-label">Гора-Колокол</span>
-              </label>
-              <label>
-                <input type="checkbox" name="red-hills" checked>
-                <span class="review__fake-checkbox"></span>
-                <span class="review__fake-label">Красные скалы</span>
-              </label>
+            <div class="review__separator">
+              <button class="review__button button" type="submit">отправить отзыв</button>
+              <span class="review__required">* — обязательные поля</span>
             </div>
-          </fieldset>
-          <fieldset class="review__block">
-            <div class="review__title review__title--border"><span class="review__borderline">Опишите свои эмоции:</span></div>
-            <textarea class="review__describe" placeholder="Опишите подробно все свои восторги"></textarea>
-          </fieldset>
-          <div class="review__separator">
-            <button class="review__button button" type="submit">отправить отзыв</button>
-            <span class="review__required">* — обязательные поля</span>
-          </div>
-        </form>
-      </section>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <h2 class="page-footer__title site-title">#visitsedona</h2>
