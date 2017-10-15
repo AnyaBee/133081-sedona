@@ -36,8 +36,10 @@
       </header>
       <main class="page-main">
         <section class="banner">
-          <img class="banner__image" src="http://placehold.it/1200x515" width="1200" height="515" alt="Welcome to
+          <div class="banner__image-holder">
+            <img class="banner__image" src="http://placehold.it/1200x515" width="1200" height="515" alt="Welcome to
             Sedona">
+          </div>
           <b class="banner__promo-title">седона — небольшой городок в аризоне,<br> заслуживающий большего!</b>
           <p class="banner__promo-text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
         </section>
@@ -48,17 +50,37 @@
               <span class="advantages__number">&ndash; №1 &ndash;</span>
               <p class="advantages__expanding-text">седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="advantages__image" src="http://placehold.it/800x256" width="800" height="256" alt="Sedona-view">
+            <div class="advantages__image-holder">
+              <img class="advantages__image" src="http://placehold.it/800x256" width="800" height="256" alt="Sedona-view">
+            </div>
           </div>
           <ul class="advantages__list">
-            <li class="advantages__item">жилье
-              <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <li class="advantages__item advantages__item--house">
+              <div class="advantages__list-wrapper">
+                <img src="http://placehold.it/80x80" width="80" height="80" alt="house">
+              </div>
+              <div class="advantages__list-description">
+                <h3>жилье</h3>
+                <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
             </li>
-            <li class="advantages__item">сувениры
-              <p class="advantages__description">Не только китайского, но и местного производства!</p>
+            <li class="advantages__item advantages__item--present">
+              <div class="advantages__list-wrapper">
+                <img src="http://placehold.it/80x80" width="80" height="80" alt="present">
+              </div>
+              <div class="advantages__list-description">
+                <h3>сувениры</h3>
+                <p class="advantages__description">Не только китайского, но и местного производства!</p>
+              </div>
             </li>
-            <li class="advantages__item">еда
-              <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            <li class="advantages__item advantages__item--food">
+              <div class="advantages__list-wrapper">
+                <img src="http://placehold.it/80x80" width="80" height="80" alt="food">
+              </div>
+              <div class="advantages__list-description">
+                <h3>еда</h3>
+                <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              </div>
             </li>
           </ul>
           <div class="advantages__feature">
@@ -67,7 +89,9 @@
               <span class="advantages__number">&ndash; №2 &ndash;</span>
               <p class="advantages__expanding-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="advantages__image advantages__image--left" src="http://placehold.it/800x256" width="800" height="256" alt="Sedona-view">
+            <div class="advantages__image-holder">
+              <img class="advantages__image advantages__image--left" src="http://placehold.it/800x256" width="800" height="256" alt="Sedona-view">
+            </div>
           </div>
           <div class="advantages__wrapper">
             <div class="advantages__feature advantages__feature--black">
@@ -89,13 +113,15 @@
             </div>
           </div>
         </section>
+        <div class="find-hotel__wrapper">
         <section class="find-hotel">
-          <h2 class="find-hotel__title site-title">заинтересовались?</h2>
-          <p class="find-hotel__promo-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <div class="button__block">
-            <a class="find-hotel__button button" href="#">Найти гостиницу</a>
-          </div>
+            <h2 class="find-hotel__title site-title">заинтересовались?</h2>
+            <p class="find-hotel__promo-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <div class="button__block">
+              <a class="find-hotel__button button" href="#">Найти гостиницу</a>
+            </div>
         </section>
+        </div>
         <section class="map">
           <img class="map-image" src="http://placehold.it/1200x350" width="1200" height="350" alt="Sedona-map">
         </section>
@@ -103,9 +129,15 @@
       <footer class="page-footer">
         <h2 class="page-footer__title site-title">#visitsedona</h2>
         <section class="page-footer__social social">
-          <span class="social__twitter">Twitter</span>
-          <span class="social__facebook">Facebook</span>
-          <span class="social__youtube">YouTube</span>
+          <div class="social__twitter social__icon">
+            <span>Twitter</span>
+          </div>
+          <div class="social__facebook social__icon">
+            <span>Facebook</span>
+          </div>
+          <div class="social__youtube social__icon">
+            <span>YouTube</span>
+          </div>
         </section>
         <section class="page-footer__copyright copyright">
           <span class="copyright__text">разработано</span>

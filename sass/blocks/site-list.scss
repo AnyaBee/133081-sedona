@@ -43,10 +43,24 @@
 @media (min-width: 768px) {
   .site-list {
     flex-direction: row;
+    max-height: 56px;
   }
 
   .site-list__item {
+    width: 20%;
     border: none;
+  }
+
+  .site-list a[href] {
+    &:hover {
+      background-color: transparent;
+      color: $navy;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
+    }
   }
 
   .site-list__link {
