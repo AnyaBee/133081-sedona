@@ -64,7 +64,7 @@
   @include visually-hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main-nav--closed .site-list__item {
     display: none;
   }

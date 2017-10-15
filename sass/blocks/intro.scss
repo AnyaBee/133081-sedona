@@ -5,8 +5,36 @@
 
 .intro__page-title {
   @include font-heading;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .intro__promo-text {
   @include font-text;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .intro__page-title {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+
+  .intro__promo-text {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+
+  .intro {
+    border-bottom: none;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro__promo-text {
+    padding-right: 385px;
+    padding-left: 385px;
+  }
 }
