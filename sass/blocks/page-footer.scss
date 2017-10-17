@@ -8,10 +8,11 @@
 .page-footer__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
-.social {
+.social,
+.page-footer__copyright {
   display: flex;
   justify-content: center;
 }
@@ -19,39 +20,69 @@
 .social__twitter span,
 .social__facebook span,
 .social__youtube span,
-.copyright__icon {
+.copyright__link span {
   @include visually-hidden;
 }
+/*
+.copyright__link {
+  display: inline-block;
+  background: url("/img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 36px;
+  fill: red;
+}
+*/
 
-.social__icon {
+.copyright__link {
+  display: block;
+  width: 28px;
+}
+
+.social__link {
+  position: relative;
   margin-left: 3px;
   margin-right: 3px;
   background-color: $navy;
   width: 48px;
   height: 48px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
-.social__icon:last-of-type {
+.social__link:hover .tests {
+  fill: red;
+}
+
+.social__link:last-of-type {
   margin-right: 0;
 }
 
-.social__icon:first-of-type {
+.social__link:first-of-type {
   margin-left: 0;
+}
+
+.social__twitter svg {
+  position: absolute;
+  top: 17px;
+  left: 13px;
 }
 
 .copyright__text {
   @include font-text;
+  margin-right: 10px;
+  padding-top: 10px;
 }
 
 @media (min-width: 768px) {
   .page-footer {
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
   }
 
-  .social__icon {
+  .social__link {
     margin-bottom: 0;
   }
 

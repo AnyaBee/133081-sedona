@@ -9,6 +9,10 @@
   border-bottom: 1px solid #eeeeee;
 }
 
+.review__new {
+  margin-bottom: 60px;
+}
+
 .review__title {
   @include font-heading;
   position: relative;
@@ -30,7 +34,7 @@
 .review__field-name span {
   @include font-text;
   align-self: center;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .review__field-name i {
@@ -70,7 +74,7 @@
   background-color: #f2f2f2;
   width: 100%;
   height: 160px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   border: none;
   padding: 20px;
 }
@@ -107,8 +111,8 @@
   vertical-align: middle;
   position: relative;
   margin-right: 20px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 
@@ -178,6 +182,15 @@
 .review__sights {
   display: flex;
   flex-direction: column;
+}
+
+.review__separator {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.review__block:last-of-type {
+  border-bottom: none;
 }
 
 @media (min-width: 768px) {
@@ -275,6 +288,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    width: 100%;
   }
 
   .review__title--border::after {
@@ -299,6 +313,10 @@
 
   .review__field-name--contact {
     margin-bottom: 10px;
+  }
+
+  .review__describe {
+    margin-bottom: 50px;
   }
 }
 
@@ -329,6 +347,10 @@
   .review__field-name--contact span {
     display: inline;
     margin-left: 0;
+  }
+
+  .review__field-name span {
+    margin-right: 10px;
   }
 
   .review__input--contact {

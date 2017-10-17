@@ -46,9 +46,24 @@
   .banner__image-holder {
     margin-top: 0;
     height: 515px;
+    margin-bottom: 55px;
   }
 
   .banner__image {
     height: 515px;
+  }
+
+  .banner__promo-title {
+    font-size: 21px;
+  }
+
+  .banner {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner__image-holder {
+    margin-bottom: 55px;
   }
 }
