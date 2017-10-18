@@ -237,6 +237,8 @@
   .advantages__description {
     padding-bottom: 40px;
     padding-top: 6px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .advantages__title {
@@ -253,11 +255,8 @@
   .advantages__list {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .advantages__description {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .advantages__title--black {
@@ -268,13 +267,11 @@
   .advantages__feature--black {
     margin-bottom: 25px;
   }
+
   .advantages__block {
     padding-top: 35px;
   }
-  .advantages__list {
-    padding-top: 10px;
-    padding-bottom: 10px
-  }
+
   .advantages__list-description h3 {
     font-size: 21px;
     margin-top: 28px;
@@ -283,6 +280,7 @@
   .advantages__image-holder {
     height: 256px;
   }
+
   .advantages__image {
     height: 256px;
   }

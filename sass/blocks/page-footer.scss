@@ -34,6 +34,18 @@
 }
 */
 
+.copyright__icon {
+  fill: $black;
+}
+
+.copyright__icon:hover {
+  fill: $navy;
+}
+
+.copyright__icon:active {
+  fill: #b2b2b2;
+}
+
 .copyright__link {
   display: block;
   width: 28px;
