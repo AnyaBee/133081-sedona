@@ -10,3 +10,15 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.button:hover {
+  background-color: $navy-hover;
+}
+
+.button:active {
+  background-color: $navy-active;
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+}

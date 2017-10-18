@@ -2,16 +2,20 @@
   padding: 20px;
   margin-bottom: 30px;
   text-align: center;
+  padding-top: 5px;
 }
 
 .find-hotel__promo-text {
   @include font-text;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
   .find-hotel {
     padding-bottom: 30px;
+    padding-top: 30px;
   }
+
 
   .find-hotel__button {
     max-width: 460px;
@@ -20,5 +24,28 @@
   .button__block {
     display: flex;
     justify-content: center;
+  }
+
+  .find-hotel__wrapper {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .find-hotel__promo-text {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-hotel {
+    margin-bottom: 35px;
+  }
+
+  .find-hotel__promo-text {
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-bottom: 48px;
   }
 }

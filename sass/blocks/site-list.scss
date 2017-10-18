@@ -25,20 +25,46 @@
   display: block;
   color: $white;
   text-decoration: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.site-list a[href] {
+  &:hover {
+    background-color: $navy-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $navy-active;
+  }
 }
 
 @media (min-width: 768px) {
   .site-list {
     flex-direction: row;
+    max-height: 56px;
   }
 
   .site-list__item {
+    width: 20%;
     border: none;
+  }
+
+  .site-list a[href] {
+    &:hover {
+      background-color: transparent;
+      color: $navy;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
+    }
   }
 
   .site-list__link {
     color: black;
+    font-size: 14px;
   }
 }

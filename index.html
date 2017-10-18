@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Sedona - because the Grand Canyon sucks</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <div class="body-wrapper">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link">Главная</a>
@@ -19,8 +18,8 @@
               <a class="site-list__link" href="photo.html">фото и видео</a>
             </li>
             <li class="site-list__item--logo">
-              <a class="page-header__logo">
-                <img class="page-header__logo-image" src="http://placehold.it/105x82" width="105" height="82" alt="City of
+              <a>
+                <img src="http://placehold.it/105x82" width="105" height="82" alt="City of
           Sedona">
               </a>
             </li>
@@ -31,13 +30,15 @@
               <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button"><span class="main-nav__toggle--text">Открыть меню</span></button>
         </nav>
       </header>
       <main class="page-main">
         <section class="banner">
-          <img class="banner__image" src="http://placehold.it/1200x515" width="1200" height="515" alt="Welcome to
+          <div class="banner__image-holder">
+            <img class="banner__image" src="http://placehold.it/1200x515" width="1200" height="515" alt="Welcome to
             Sedona">
+          </div>
           <b class="banner__promo-title">седона — небольшой городок в аризоне,<br> заслуживающий большего!</b>
           <p class="banner__promo-text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
         </section>
@@ -48,17 +49,37 @@
               <span class="advantages__number">&ndash; №1 &ndash;</span>
               <p class="advantages__expanding-text">седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="advantages__image" src="http://placehold.it/800x256" width="800" height="256" alt="Sedona-view">
+            <div class="advantages__image-holder">
+              <img class="advantages__image" src="http://placehold.it/800x256" width="800" height="256" alt="Sedona-view">
+            </div>
           </div>
           <ul class="advantages__list">
-            <li class="advantages__item">жилье
-              <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <li class="advantages__item advantages__item--house">
+              <div class="advantages__list-wrapper">
+                <img src="http://placehold.it/80x80" width="80" height="80" alt="house">
+              </div>
+              <div class="advantages__list-description">
+                <h3>жилье</h3>
+                <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
             </li>
-            <li class="advantages__item">сувениры
-              <p class="advantages__description">Не только китайского, но и местного производства!</p>
+            <li class="advantages__item advantages__item--present">
+              <div class="advantages__list-wrapper">
+                <img src="http://placehold.it/80x80" width="80" height="80" alt="present">
+              </div>
+              <div class="advantages__list-description">
+                <h3>сувениры</h3>
+                <p class="advantages__description">Не только китайского, но и местного производства!</p>
+              </div>
             </li>
-            <li class="advantages__item">еда
-              <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            <li class="advantages__item advantages__item--food">
+              <div class="advantages__list-wrapper">
+                <img src="http://placehold.it/80x80" width="80" height="80" alt="food">
+              </div>
+              <div class="advantages__list-description">
+                <h3>еда</h3>
+                <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              </div>
             </li>
           </ul>
           <div class="advantages__feature">
@@ -67,7 +88,9 @@
               <span class="advantages__number">&ndash; №2 &ndash;</span>
               <p class="advantages__expanding-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="advantages__image advantages__image--left" src="http://placehold.it/800x256" width="800" height="256" alt="Sedona-view">
+            <div class="advantages__image-holder">
+              <img class="advantages__image advantages__image--left" src="http://placehold.it/800x256" width="800" height="256" alt="Sedona-view">
+            </div>
           </div>
           <div class="advantages__wrapper">
             <div class="advantages__feature advantages__feature--black">
@@ -89,29 +112,62 @@
             </div>
           </div>
         </section>
+        <div class="find-hotel__wrapper">
         <section class="find-hotel">
-          <h2 class="find-hotel__title site-title">заинтересовались?</h2>
-          <p class="find-hotel__promo-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <div class="button__block">
-            <a class="find-hotel__button button" href="#">Найти гостиницу</a>
-          </div>
+            <h2 class="find-hotel__title site-title">заинтересовались?</h2>
+            <p class="find-hotel__promo-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <div class="button__block">
+              <a class="find-hotel__button button" href="#">Найти гостиницу</a>
+            </div>
         </section>
+        </div>
         <section class="map">
-          <img class="map-image" src="http://placehold.it/1200x350" width="1200" height="350" alt="Sedona-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6547.579936820629!2d-111.80316428580346!3d34.8615044186135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da1252d590129%3A0x238b9419fd367e09!2sSedona+Artist+Market!5e0!3m2!1sen!2suk!4v1508183555961" width="600" height="450" allowfullscreen></iframe>
         </section>
       </main>
       <footer class="page-footer">
         <h2 class="page-footer__title site-title">#visitsedona</h2>
         <section class="page-footer__social social">
-          <span class="social__twitter">Twitter</span>
-          <span class="social__facebook">Facebook</span>
-          <span class="social__youtube">YouTube</span>
+          <a href="#" class="social__twitter social__link">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+  <g id="W6EeEF_1_">
+    <g>
+      <path fill="" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+    </g>
+  </g>
+</svg>
+            <span>Twitter</span>
+          </a>
+          <a href="#" class="social__facebook social__link">
+            <span>Facebook</span>
+          </a>
+          <a href="#" class="social__youtube social__link">
+            <span>YouTube</span>
+          </a>
         </section>
         <section class="page-footer__copyright copyright">
           <span class="copyright__text">разработано</span>
-          <a class="copyright__icon" href="#">HTMLAcademy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>HTMLAcademy</span>
+            <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" width="38" height="46" viewBox="0 0 60 60"><path fill="" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+          </a>
         </section>
       </footer>
     </div>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
