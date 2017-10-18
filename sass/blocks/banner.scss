@@ -42,6 +42,15 @@
   height: 390px;
 }
 
+.banner__image-holder::after {
+  position: absolute;
+  content: "";
+  background: url("/img/text-sedona-index.svg");
+  background-repeat: no-repeat;
+  width: 100% - 160px;
+  height: 390px;
+}
+
 @media (min-width: 768px) {
   .banner__image-holder {
     margin-top: 0;

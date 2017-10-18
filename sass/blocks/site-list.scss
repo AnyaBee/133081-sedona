@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.site-list__item--logo {
+  z-index: 2;
+}
+
 .site-list__item {
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
@@ -66,5 +70,12 @@
   .site-list__link {
     color: black;
     font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-list__item--logo img {
+    width: 194px;
+    height: auto;
   }
 }

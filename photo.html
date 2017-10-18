@@ -19,8 +19,12 @@
           </li>
           <li class="site-list__item--logo">
             <a>
-              <img src="http://placehold.it/105x82" width="105" height="82" alt="City of
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img src="img/logo-sedona-mobile.svg" width="105" height="82" alt="City of
           Sedona">
+              </picture>
             </a>
           </li>
           <li class="site-list__item">
@@ -36,7 +40,12 @@
     <main>
       <div class="wrapper">
         <div class="banner-internal">
-          <img class="banner-internal__image" src="http://placehold.it/1200x300" width="1200" height="300" alt="Photo of Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
+            <img class="banner__image" src="img/bg-back-mobile@1x.jpg"
+                 srcset="img/bg-back-mobile@2x.jpg 2x" alt="Welcome to Sedona">
+          </picture>
         </div>
         <div class="container">
           <div class="intro">
@@ -47,7 +56,14 @@
             <div class="photo__main">
               <figure class="photo__item photo__item--main">
                 <a class="photo__full-view--main" href="#">
-                  <img class="photo__image photo__image--main" src="http://placehold.it/1200x400" width="1200" height="400" alt="Photo of Sedona">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x,
+                    img/photo-sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x,
+                    img/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="photo__image photo__image--main" src="img/photo-sunset-mobile@1x.jpg"
+                       srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Photo of Sedona">
+                  </picture>
                 </a>
                 <div class="photo__container photo__container--main">
                   <div class="photo__title">неродные просторы
@@ -63,8 +79,14 @@
             <div class="photo__all">
               <figure class="photo__item">
                 <a class="photo__full-view" href="#">
-                  <img class="photo__image" src="http://placehold.it/400x280" width="400" height="280" alt="Photo of
-                  Sedona">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x,
+                    img/photo-cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x,
+                    img/photo-cactus-tablet@2x.jpg 2x">
+                    <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x"
+                       alt="Photo of Sedona">
+                  </picture>
                 </a>
                 <div class="photo__container">
                   <div class="photo__title">Местная растительность
@@ -78,8 +100,14 @@
               </figure>
               <figure class="photo__item">
                 <a class="photo__full-view" href="#">
-                  <img class="photo__image" src="http://placehold.it/400x280" width="400" height="280" alt="Photo of
-                  Sedona">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x,
+                    img/photo-roads-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x,
+                    img/photo-roads-tablet@2x.jpg 2x">
+                    <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg"
+                       alt="Photo of Sedona">
+                  </picture>
                 </a>
                 <div class="photo__container">
                   <div class="photo__title">Дорога на север
@@ -93,8 +121,14 @@
               </figure>
               <figure class="photo__item">
                 <a class="photo__full-view" href="#">
-                  <img class="photo__image" src="http://placehold.it/400x280" width="400" height="280" alt="Photo of
-                  Sedona">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x,
+                    img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x,
+                    img/photo-bridge-tablet@2x.jpg 2x">
+                    <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg"
+                         alt="Photo of Sedona">
+                  </picture>
                 </a>
                 <div class="photo__container">
                   <div class="photo__title">Мост дьявола
@@ -116,8 +150,14 @@
                   в очередной раз!</h2>
             </div>
             <div class="video__holder">
-              <img class="video__image" src="http://placehold.it/800x500" width="650" height="500" alt="Photo of
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x,
+                    img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x,
+                    img/video-tablet@2x.jpg 2x">
+                <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Photo of
                 Sedona">
+              </picture>
             </div>
             <div class="video__controls">
               <div class="video__volume-scale">Громкость</div>
@@ -129,26 +169,26 @@
           </section>
         </div>
     </main>
+    <footer class="page-footer">
+      <h2 class="page-footer__title site-title">#visitsedona</h2>
+      <section class="page-footer__social social">
+        <a href="#" class="social__twitter social__link">
+          <span>Twitter</span>
+        </a>
+        <a href="#" class="social__facebook social__link">
+          <span>Facebook</span>
+        </a>
+        <a href="#" class="social__youtube social__link">
+          <span>YouTube</span>
+        </a>
+      </section>
+      <section class="page-footer__copyright copyright">
+        <span class="copyright__text">разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>HTMLAcademy</span>
+        </a>
+      </section>
+    </footer>
   </div>
-  <footer class="page-footer">
-    <h2 class="page-footer__title site-title">#visitsedona</h2>
-    <section class="page-footer__social social">
-      <a href="#" class="social__twitter social__link">
-        <span>Twitter</span>
-      </a>
-      <a href="#" class="social__facebook social__link">
-        <span>Facebook</span>
-      </a>
-      <a href="#" class="social__youtube social__link">
-        <span>YouTube</span>
-      </a>
-    </section>
-    <section class="page-footer__copyright copyright">
-      <span class="copyright__text">разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>HTMLAcademy</span>
-      </a>
-    </section>
-  </footer>
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
