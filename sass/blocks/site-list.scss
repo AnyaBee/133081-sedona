@@ -31,6 +31,7 @@
   text-decoration: none;
   padding-top: 7px;
   padding-bottom: 7px;
+  background-color: $navy;
 }
 
 .site-list a[href] {
@@ -70,6 +71,7 @@
   .site-list__link {
     color: black;
     font-size: 14px;
+    background-color: transparent;
   }
 }
 
@@ -77,5 +79,12 @@
   .site-list__item--logo img {
     width: 194px;
     height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-list__item--logo {
+    order: 3;
+    /*background-color: $white;*/
   }
 }

@@ -55,9 +55,18 @@
   height: 58px;
   background-color: #f2f2f2;
   padding: 16px 22px;
-  border: none;
+  border: 4px solid #f2f2f2;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.review__input:hover {
+  background-color: #e5e5e5;
+  border: 4px solid #e5e5e5;
+}
+
+.review__input:active {
+  background-color: $white;
 }
 
 .review__input::placeholder {
@@ -141,7 +150,7 @@
   border-radius: 50%;
   opacity: 0;
 }
-
+/*
 .review__fake-checkbox::before {
   content: "";
   position: absolute;
@@ -151,6 +160,18 @@
   left: 17px;
   background: $dark;
   border-radius: 50%;
+  opacity: 0;
+}
+*/
+
+.review__fake-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  bottom: 17px;
+  left: 17px;
+  background: url("/img/icon-tick.svg") no-repeat;
   opacity: 0;
 }
 
