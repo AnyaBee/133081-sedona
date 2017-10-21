@@ -30,7 +30,7 @@
   width: 100%;
   height: 390px;
   background: url("../img/bg-back-desktop@1x.jpg");
-  background-position: center;
+  background-position: 50% 30%;
 }
 
 .banner__main-img {
@@ -45,7 +45,7 @@
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .banner__image-holder {
     background-image: url("../img/bg-back-desktop@2x.jpg");
-    background-position: center;
+    background-position: 50% 30%;
   }
 }
 
@@ -54,6 +54,7 @@
     margin-top: 0;
     height: 515px;
     margin-bottom: 55px;
+    /*background-position: 50% 50%;*/
   }
 
   .banner__promo-title {
