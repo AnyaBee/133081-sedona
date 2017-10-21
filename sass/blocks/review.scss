@@ -168,7 +168,7 @@
   right: 17px;
   bottom: 17px;
   left: 17px;
-  background: url("/img/icon-tick.svg") no-repeat;
+  background: url("../img/icon-tick.svg") no-repeat;
   opacity: 0;
 }
 
@@ -207,12 +207,29 @@
   margin: 0 auto;
 }
 
-.review__block:last-of-type {
+.review__block:last-of-type {та
   border-bottom: none;
 }
 
-.review__input--contact {
+.review__input--phone {
+  position: relative;
   background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.review__input--phone::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  right: 0;
+  top: 0;
+  background-color: #e6e6e6;
+}
+
+.review__input--mail {
+  background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: 95% 50%;
 }
