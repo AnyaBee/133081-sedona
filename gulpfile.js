@@ -65,7 +65,6 @@ gulp.task("html", function() {
       include()
     ]))
     .pipe(gulp.dest("build"));
-   /* .pipe(server.stream());*/
 });
 
 gulp.task("build", function(done) {
