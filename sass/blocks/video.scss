@@ -45,7 +45,7 @@
   @include visually-hidden;
 }
 
-.test {
+.video__wrapper {
   position: absolute;
   bottom: -65px;
   left: 50%;
@@ -155,7 +155,7 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .test {
+  .video__wrapper {
     bottom: 55px;
   }
 
