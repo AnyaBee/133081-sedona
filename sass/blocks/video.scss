@@ -216,8 +216,9 @@
 
 @media (min-width: 1200px) {
   .video__promo-text {
-    padding-left: 370px;
-    padding-right: 370px;
+    padding-left: 380px;
+    padding-right: 380px;
+    line-height: 20px;
   }
 
   .video__holder {
@@ -237,6 +238,28 @@
   }
 
   .video {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+  }
+
+  .video__title {
+    padding-top: 10px;
+  }
+
+  .video__replay svg {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+  }
+
+  .video__subtitles svg {
+    position: absolute;
+    right: 95px;
+    top: 40px;
+  }
+
+  .video__full-screen svg {
+    position: absolute;
+    right: 45px;
+    top: 40px;
   }
 }
