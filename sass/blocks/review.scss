@@ -414,4 +414,21 @@
   .review__field-name i {
     @include visually-hidden;
   }
+
+  .review__sights label:nth-child(1),
+  .review__sights label:nth-child(2) {
+    width: 256px;
+  }
+
+  .review__sights label:nth-child(3) {
+    width: 230px;
+  }
+
+  .review__sights label:nth-child(4) {
+    width: 205px;
+  }
+
+  .review__block-emotions {
+    padding-top: 10px;
+  }
 }

@@ -80,7 +80,7 @@
   .banner-internal__triangle-large {
     display: block;
     position: absolute;
-    bottom: -35px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -94,6 +94,9 @@
 
   .banner-internal__image {
     height: 300px;
+  }
+  .banner-internal__img {
+    padding-top: 20px;
   }
 
   .banner-internal__image-holder {
