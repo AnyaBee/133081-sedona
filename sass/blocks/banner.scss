@@ -5,17 +5,6 @@
   clip-path: polygon(0 90%, 50% 100%, 100% 90%);*/
 }
 
-.banner__image {
-  margin-bottom: 40px;
-  width: 100%;
-  height: 390px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 0;
-  transform: translateX(-50%);
-}
-
 .banner__promo-title {
   @include font-heading;
   display: inline-block;
@@ -40,6 +29,24 @@
   overflow: hidden;
   width: 100%;
   height: 390px;
+  background: url("../img/bg-back-desktop@1x.jpg");
+  background-position: 50% 30%;
+}
+
+.banner__main-img {
+  position: absolute;
+  width: 280px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .banner__image-holder {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-position: 50% 30%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -47,10 +54,7 @@
     margin-top: 0;
     height: 515px;
     margin-bottom: 55px;
-  }
-
-  .banner__image {
-    height: 515px;
+    /*background-position: 50% 50%;*/
   }
 
   .banner__promo-title {
@@ -59,6 +63,12 @@
 
   .banner {
     margin-bottom: 50px;
+  }
+
+  .banner__main-img {
+    width: 500px;
+    height: auto;
+    font-size: 60px;
   }
 }
 

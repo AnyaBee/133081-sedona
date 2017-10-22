@@ -55,9 +55,18 @@
   height: 58px;
   background-color: #f2f2f2;
   padding: 16px 22px;
-  border: none;
+  border: 4px solid #f2f2f2;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.review__input:hover {
+  background-color: #e5e5e5;
+  border: 4px solid #e5e5e5;
+}
+
+.review__input:active {
+  background-color: $white;
 }
 
 .review__input::placeholder {
@@ -77,6 +86,7 @@
   margin-bottom: 35px;
   border: none;
   padding: 20px;
+  resize: none;
 }
 
 .review__block [type="checkbox"],
@@ -125,11 +135,7 @@
 .review__fake-checkbox:active {
   background-color: #d5d5d5;
 }
-/*
-.review__block [type="radio"] + .review__fake-radio {
-  border-radius: 50%;
-}
-*/
+
 .review__block [type="radio"] + .review__fake-radio::before {
   content: "";
   position: absolute;
@@ -141,7 +147,7 @@
   border-radius: 50%;
   opacity: 0;
 }
-
+/*
 .review__fake-checkbox::before {
   content: "";
   position: absolute;
@@ -151,6 +157,18 @@
   left: 17px;
   background: $dark;
   border-radius: 50%;
+  opacity: 0;
+}
+*/
+
+.review__fake-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  bottom: 17px;
+  left: 17px;
+  background: url("../img/icon-tick.svg") no-repeat;
   opacity: 0;
 }
 
@@ -193,6 +211,29 @@
   border-bottom: none;
 }
 
+.review__input--phone {
+  position: relative;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.review__input--phone::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  right: 0;
+  top: 0;
+  background-color: #e6e6e6;
+}
+
+.review__input--mail {
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
 @media (min-width: 768px) {
   .review {
     margin-bottom: 80px;
@@ -225,7 +266,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /*align-items: center;*/
     width: 100%;
     order: 3;
     border: none;
@@ -251,9 +291,6 @@
   .review__input--contact {
     display: block;
     width: 100%;
-    /*padding: 70px;
-    background: #e6e6e6 url("http://placehold.it/60x60") no-repeat 17px 12px;
-    */
   }
 
   .review__fake-radio {
