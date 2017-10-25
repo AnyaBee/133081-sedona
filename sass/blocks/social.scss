@@ -1,11 +1,12 @@
 .social {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.social__twitter span,
-.social__facebook span,
-.social__youtube span,
+.social__link--twitter span,
+.social__link--facebook span,
+.social__link--youtube span,
 .copyright__link span {
   @include visually-hidden;
 }

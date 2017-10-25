@@ -137,7 +137,7 @@
   .video__promo-text {
     padding-left: 180px;
     padding-right: 180px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 
   .video__holder {
@@ -185,7 +185,7 @@
     position: absolute;
     width: 60%;
     height: 4px;
-    top: 50px;
+    top: 46px;
     left: 92px;
     background-color: rgba(255, 255, 255, 0.2);
   }
@@ -194,8 +194,8 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    top: 47px;
-    left: 207px;
+    top: 43px;
+    left: 204px;
     background-color: $white;
     border-radius: 50%;
   }
@@ -238,11 +238,11 @@
   }
 
   .video {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   .video__title {
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   .video__replay svg {
@@ -254,12 +254,12 @@
   .video__subtitles svg {
     position: absolute;
     right: 95px;
-    top: 40px;
+    top: 35px;
   }
 
   .video__full-screen svg {
     position: absolute;
     right: 45px;
-    top: 40px;
+    top: 35px;
   }
 }

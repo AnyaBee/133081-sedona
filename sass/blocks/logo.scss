@@ -1,0 +1,25 @@
+.logo {
+  z-index: 2;
+  display: block;
+}
+
+.logo a {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    order: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 194px;
+    height: auto;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+}

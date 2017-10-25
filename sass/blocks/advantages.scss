@@ -112,6 +112,7 @@
 .advantages__image-holder {
   position: relative;
   height: 260px;
+  overflow: hidden;
 }
 
 .advantages__image {
@@ -171,6 +172,7 @@
     width: 33%;
     margin-top: 40px;
     padding-left: 0;
+    margin-right: 0.3%;
   }
 
   .advantages__item h3 {
@@ -241,21 +243,20 @@
   }
 
   .advantages__title {
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 100px;
+    padding-right: 95px;
     padding-top: 20px;
   }
 
   .advantages__expanding-text {
-    padding-left: 15px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 7px;
   }
 
   .advantages__list {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 10px;
     padding-bottom: 10px;
   }
 
@@ -274,10 +275,19 @@
 
   .advantages__list-description h3 {
     font-size: 21px;
-    margin-top: 28px;
   }
 
   .advantages__image-holder {
     height: 256px;
+  }
+
+  .advantages__item--present .advantages__description {
+    padding-left: 90px;
+    padding-right: 80px;
+  }
+
+  .advantages__block--right .advantages__expanding-text {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
