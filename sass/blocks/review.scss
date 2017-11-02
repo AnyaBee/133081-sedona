@@ -51,6 +51,9 @@
 }
 
 .review__input {
+  @include font-heading;
+  text-transform: none;
+  text-transform: none;
   width: 100%;
   height: 58px;
   background-color: #f2f2f2;
@@ -184,6 +187,7 @@
 
 .review__describe::placeholder {
   @include font-heading;
+  line-height: inherit;
   text-transform: none;
 }
 
@@ -340,6 +344,8 @@
   }
 
   .review__borderline {
+    margin: 0;
+    font-size: 21px;
     display: inline-block;
     background: $white;
     padding: 0 55px;
