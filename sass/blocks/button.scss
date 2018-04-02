@@ -1,24 +1,21 @@
 .button {
-  display: block;
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: $navy;
-  font-family: $font-title;
   color: $white;
-  font-size: 21px;
-  font-weight: bold;
-  text-transform: uppercase;
+  background-color: $blue;
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  text-align: center;
+  border-radius: 2px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-.button:hover {
-  background-color: $navy-hover;
-}
-
+.button:hover,
 .button:active {
-  background-color: $navy-active;
-}
-
-.button:disabled {
-  background-color: #e5e5e5;
+  background-color: #379bf9;
 }
