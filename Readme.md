@@ -56,3 +56,5 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/133081-sedona
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/133081-sedona/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/133081-sedona?type=dev
+
+Done!
